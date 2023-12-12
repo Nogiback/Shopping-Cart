@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  
+}
+
+#root {
+  height: 100dvh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./assets/layered-waves-haikei-light.svg');
+}

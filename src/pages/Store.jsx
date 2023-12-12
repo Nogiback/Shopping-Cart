@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export default function Store() {
-  return (
-    <div>Store</div>
-  )
+  return <div className='h-[calc(100%-80px)]'>Store</div>;
 }

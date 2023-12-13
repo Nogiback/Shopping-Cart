@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ShoppingCart, Search, CircleUserRound } from 'lucide-react';
+import { Link, NavLink } from 'react-router-dom';
+import { ShoppingCart, Search, CircleUserRound, Store } from 'lucide-react';
 
 export default function NavBar({ toggleCart, cart }) {
   return (
     <div className='bg-white-100 text-forest-900 dark:bg-forest-900 dark:text-white-200 sticky left-0 right-0 top-0 z-10 flex items-center justify-between px-8 py-5'>
-      <Link className='text-4xl font-bold' to='/'>
-        <i className='fa-solid fa-shop'></i> The Nogi Shop
+      <Link className='flex text-4xl font-bold' to='/'>
+        <Store size={42} className='mr-2' /> The Nogi Shop
       </Link>
       <div className='flex gap-4'>
         <button>
@@ -15,9 +15,9 @@ export default function NavBar({ toggleCart, cart }) {
         <Link className='hover:text-sage-600 text-lg font-bold' to='/'>
           Home
         </Link>
-        <Link className='hover:text-sage-600 text-lg font-bold' to='/store'>
+        <NavLink className='hover:text-sage-600 text-lg font-bold' to='/store'>
           Shop
-        </Link>
+        </NavLink>
         <button>
           <CircleUserRound className='hover:text-sage-600' />
         </button>

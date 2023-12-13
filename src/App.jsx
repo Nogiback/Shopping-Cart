@@ -9,7 +9,6 @@ import Cart from './pages/Cart';
 
 export default function App() {
   const [cart, setCart] = useState([]);
-  const [storeItems, setStoreItems] = useState([]);
   const [cartActive, setCartActive] = useState(false);
 
   function toggleCart() {
@@ -19,6 +18,10 @@ export default function App() {
       setCartActive(false);
     }
   }
+
+  function addToCart(itemName, itemImage, price, quantity) {}
+
+  function removeFromCart(itemName, itemImage, price, quantity) {}
 
   return (
     <>

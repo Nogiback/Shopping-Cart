@@ -2,16 +2,16 @@ import React from 'react';
 
 const LINKS = [
   {
-    title: 'Product',
-    items: ['Overview', 'Features', 'Solutions', 'Tutorials'],
+    title: 'Products',
+    items: ['FAQs', 'Shipping', 'Returns', 'Sustainability'],
   },
   {
     title: 'Company',
-    items: ['About us', 'Careers', 'Press', 'News'],
+    items: ['About Us', 'Careers', 'Press', 'News'],
   },
   {
-    title: 'Resource',
-    items: ['Blog', 'Newsletter', 'Events', 'Help center'],
+    title: 'Resources',
+    items: ['Blog', 'Newsletter', 'Events', 'Help Center'],
   },
 ];
 

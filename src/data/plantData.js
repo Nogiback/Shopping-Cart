@@ -11,6 +11,10 @@ import parlor1 from '../assets/plants/ParlorPalm.jpg';
 import parlor2 from '../assets/plants/ParlorPalm2.jpg';
 import shamrock1 from '../assets/plants/OxalisTriangularisPurple.jpg';
 import shamrock2 from '../assets/plants/OxalisTriangularisPurple2.jpg';
+import ponytail1 from '../assets/plants/PonytailPalm1.jpg';
+import ponytail2 from '../assets/plants/PonytailPalm2.jpg';
+import calamondin1 from '../assets/plants/CalamondinTree1.jpg';
+import calamondin2 from '../assets/plants/CalamondinTree2.jpg';
 
 const plants = [
   {
@@ -60,6 +64,22 @@ const plants = [
     img1: shamrock1,
     img2: shamrock2,
     info: `Oxalis Triangularis, aka False Shamrock, gets its name from its trifoliate leaf shape. The Oxalis traiangularis 'Green/Francis' is the one most commonly cultivated as a houseplant, followed by the tetraphylla 'Iron Cross' and 'purple'. They open and close their leaves from day to night as a part of their circadian rhythm.`,
+  },
+  {
+    id: uuidv4(),
+    name: 'Ponytail Palm',
+    price: 35,
+    img1: ponytail1,
+    img2: ponytail2,
+    info: `Beaucarnea Recurvata, aka Ponytail Palm, is a species of plant in the family Asparagaceae, native to eastern Mexico. Despite their common name, Ponytail Palms aren’t actually palms at all, and are more closely related to lilies, but need the kind of care you’d give a cactus or succulent. With a bulbous trunk, cascading ponytail of leaves, endearing proportions, and low maintenance reputation, this slow-grower can reportedly live for decades.`,
+  },
+  {
+    id: uuidv4(),
+    name: 'Calamondin Orange Tree',
+    price: 50,
+    img1: calamondin1,
+    img2: calamondin2,
+    info: `Calamondin, aka Citrus mitis or Calamansi, is a sour citrus fruit originating in China and is a cross between a mandarin orange and a kumquat. Its glossy leaves also give off a delightful citrus aroma. Being one of the best indoor fruiting trees, it produces small, sour oranges, about 1 inch in diameter, which resemble tangerines. It can also withstand temperatures down to -6°C! But if you want an abundance of fruit, keep it in a very bright and warm location.`,
   },
 ];
 

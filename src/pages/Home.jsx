@@ -25,7 +25,7 @@ export default function Home() {
               Shop Now
             </Link>
           </div>
-          <div className='bg-white-100 relative hidden w-[600px] overflow-hidden rounded-lg group-hover:opacity-75 md:flex'>
+          <div className='bg-white-100 relative hidden max-w-[50%] overflow-hidden rounded-lg group-hover:opacity-75 md:flex'>
             <img
               src={asset1}
               alt='Living room with plants'

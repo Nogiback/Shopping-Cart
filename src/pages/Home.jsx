@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import asset1 from '../assets/asset1.jpg';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-80px)] w-full justify-center'>
         <div className='container px-4 py-40'>
           <div className='flex flex-col items-center space-y-4 text-center'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex gap-4'>
               <h1 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none'>
                 Welcome to the Nogi Shop
               </h1>
@@ -16,6 +17,11 @@ export default function Home() {
                 tempora expedita consectetur tenetur veritatis eligendi.
                 Veritatis laboriosam quos cum optio?
               </p>
+              <img
+                src={asset1}
+                alt='living room with plants'
+                className=''
+              ></img>
             </div>
             <Link
               className='text-md bg-forest-900 text-grey-100 hover:bg-sage-600 border-forest-900 inline-flex h-9 items-center justify-center rounded-md border-2 border-solid px-4 py-2 font-medium shadow-lg transition-colors dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300'

@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import ProductPage from './components/ProductPage';
+import ProductPage from './pages/ProductPage';
 import Home from './pages/Home';
 import Store from './pages/Store';
 import Cart from './pages/Cart';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -32,6 +33,7 @@ export default function App() {
           <Route path='/store' element={<Store />} />
           <Route path='/store/:title' element={<ProductPage />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

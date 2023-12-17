@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ProductPage from './pages/ProductPage';
 import Home from './pages/Home';
-import Store from './pages/Store';
+import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 
@@ -20,9 +20,9 @@ export default function App() {
     }
   }
 
-  function addToCart(itemName, itemImage, price, quantity) {}
+  function addToCart(productName, productImage, price, quantity) {}
 
-  function removeFromCart(itemName, itemImage, price, quantity) {}
+  function removeFromCart(productName, productImage, price, quantity) {}
 
   return (
     <>
@@ -30,11 +30,14 @@ export default function App() {
         <NavBar toggleCart={toggleCart} cart={cart} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/store' element={<Store />} />
-          <Route path='/store/:title' element={<ProductPage />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route
+            path='/shop/:productName'
+            element={<ProductPage addToCart={addToCart} />}
+          />
           <Route path='*' element={<NotFound />} />
         </Routes>
+        {/* <Cart status={cartActive} toggleCart={toggleCart} cart={cart} /> */}
         <Footer />
       </Router>
     </>

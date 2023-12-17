@@ -21,13 +21,17 @@ export default function NavBar({ toggleCart, cart }) {
         <Link className='hover:text-sage-600 text-lg font-bold' to='/'>
           Home
         </Link>
-        <NavLink className='hover:text-sage-600 text-lg font-bold' to='/store'>
+        <NavLink className='hover:text-sage-600 text-lg font-bold' to='/shop'>
           Shop
         </NavLink>
         <button>
           <CircleUserRound className='hover:text-sage-600' />
         </button>
-        <button type='button' className='relative mr-5 flex bg-transparent'>
+        <button
+          onClick={toggleCart}
+          type='button'
+          className='relative mr-5 flex bg-transparent'
+        >
           <ShoppingCart size={26} className='hover:text-sage-600' />
           <div className='bg-sage-600 text-white-100 absolute -top-3 left-6 rounded-full px-2 py-0.5 text-sm'>
             0
@@ -84,7 +88,7 @@ export default function NavBar({ toggleCart, cart }) {
         <Link
           onClick={handleClick}
           className='hover:bg-forest-600 flex w-full justify-center py-4'
-          to='/store'
+          to='/shop'
         >
           Shop
         </Link>

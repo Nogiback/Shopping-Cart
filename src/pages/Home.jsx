@@ -13,14 +13,15 @@ export default function Home() {
                 Welcome to the Nogi Shop
               </h1>
               <p className='text-forest-900 dark:text-white-100 mx-auto max-w-[700px] md:text-xl'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                tempora expedita consectetur tenetur veritatis eligendi.
-                Veritatis laboriosam quos cum optio?
+                Transform your living spaces into vibrant, green sanctuaries
+                with our carefully curated collection of indoor plants. Explore
+                a diverse range of low-maintenance, air-purifying and stylish
+                foliage that effortlessly blend beauty with tranquility.
               </p>
             </div>
             <Link
               className='text-md bg-forest-900 text-grey-100 hover:bg-sage-600 border-forest-900 dark:border-white-100 dark:bg-white-100 dark:hover:bg-sage-600 dark:hover:text-forest-900 inline-flex h-9 items-center justify-center rounded-md border-2 border-solid px-4 py-2 font-medium shadow-lg transition-colors'
-              to='/store'
+              to='/shop'
             >
               Shop Now
             </Link>

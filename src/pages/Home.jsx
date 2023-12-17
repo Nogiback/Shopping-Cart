@@ -14,8 +14,8 @@ export default function Home() {
               <p className='text-forest-900 dark:text-white-100 mx-auto max-w-[700px] md:text-xl'>
                 Transform your living spaces into vibrant, green sanctuaries
                 with our carefully curated collection of indoor plants. Explore
-                a diverse range of low-maintenance, air-purifying and stylish
-                foliage that effortlessly blend beauty with tranquility.
+                a diverse range of stylish, low-maintenance, and air-purifying
+                foliage that effortlessly blends beauty with tranquility.
               </p>
             </div>
             <Link

@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import ProductPage from './pages/ProductPage';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
-import Cart from './pages/Cart';
+import Cart from './components/Cart';
 import NotFound from './pages/NotFound';
 
 export default function App() {

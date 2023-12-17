@@ -34,7 +34,7 @@ export default function NavBar({ toggleCart, cart }) {
         >
           <ShoppingCart size={26} className='hover:text-sage-600' />
           <div className='bg-sage-600 text-white-100 absolute -top-3 left-6 rounded-full px-2 py-0.5 text-sm'>
-            {cart ? 0 : cart}
+            {cart.length}
           </div>
         </button>
       </div>
@@ -71,7 +71,7 @@ export default function NavBar({ toggleCart, cart }) {
         >
           <ShoppingCart size={26} className='hover:text-sage-600' />
           <div className='bg-sage-600 text-white-100 absolute -top-3 left-6 rounded-full px-2 py-0.5 text-sm'>
-            {cart ? 0 : cart}
+            {cart.length}
           </div>
         </button>
       </div>

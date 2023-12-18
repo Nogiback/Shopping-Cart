@@ -4,7 +4,7 @@ import asset1 from '../assets/asset1.jpg';
 export default function Home() {
   return (
     <>
-      <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-80px)] w-full justify-center'>
+      <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-84px)] w-full justify-center'>
         <div className='container flex items-center justify-center gap-16 px-4 py-40'>
           <div className='flex flex-col items-center space-y-4 text-center'>
             <div className='flex flex-col gap-4'>

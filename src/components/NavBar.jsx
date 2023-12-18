@@ -10,7 +10,7 @@ export default function NavBar({ toggleCart, cart }) {
   }
 
   return (
-    <div className='bg-white-100 text-forest-900 dark:bg-forest-900 dark:text-white-200 sticky left-0 right-0 top-0 z-10 flex items-center justify-between px-8 py-5'>
+    <div className='bg-white-100 text-forest-900 dark:bg-forest-900 dark:text-white-200 sticky left-0 right-0 top-0 z-20 flex items-center justify-between px-8 py-5'>
       <Link className='flex text-2xl font-bold sm:text-4xl' to='/'>
         <Store className='mr-2 h-8 w-8 sm:h-11 sm:w-11' /> The Nogi Shop
       </Link>

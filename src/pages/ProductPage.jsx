@@ -14,7 +14,7 @@ export default function ProductPage({ addToCart }) {
   );
 
   return (
-    <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-80px)] w-full justify-center'>
+    <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-84px)] w-full justify-center'>
       <div className='bg-white-100 flex flex-col items-center justify-start gap-6 pt-6 md:flex-row md:items-start md:justify-center md:bg-opacity-0 md:pt-12'>
         <div
           className='relative flex h-auto w-[60%] max-w-2xl rounded-lg md:w-[40%]'

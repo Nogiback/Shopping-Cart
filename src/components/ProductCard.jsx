@@ -27,7 +27,7 @@ export default function ProductCard({ plant }) {
           }`}
         />
       </div>
-      <h3 className='text-forest-900 mt-4 text-sm'>{plant.name}</h3>
+      <h3 className='text-forest-900 text-md mt-4 font-bold'>{plant.name}</h3>
       <p className='text-forest-900 mt-1 text-lg font-medium'>${plant.price}</p>
     </Link>
   );

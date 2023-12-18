@@ -78,28 +78,28 @@ export default function NavBar({ toggleCart, cart }) {
 
       {/* Hamburger Menu */}
       <ul
-        className={`bg-forest-900 text-white-100 absolute right-0 top-[100%] w-screen justify-end space-y-3 border-2 duration-150 md:hidden ${
+        className={`bg-forest-900 text-white-100 absolute right-0 top-[100%] w-screen justify-end space-y-3 border-2 md:hidden ${
           isOpen ? 'flex flex-col' : 'hidden'
         }`}
       >
         <Link
           onClick={handleClick}
-          className='hover:bg-forest-600 flex w-full justify-center py-4'
+          className='hover:bg-forest-600 flex w-full justify-center py-4 duration-200'
           to='/'
         >
           Home
         </Link>
         <Link
           onClick={handleClick}
-          className='hover:bg-forest-600 flex w-full justify-center py-4'
+          className='hover:bg-forest-600 flex w-full justify-center py-4 duration-200'
           to='/shop'
         >
           Shop
         </Link>
-        <li className='hover:bg-forest-600 flex w-full justify-center py-4'>
+        <li className='hover:bg-forest-600 flex w-full justify-center py-4 duration-200'>
           Search
         </li>
-        <li className='hover:bg-forest-600 flex w-full justify-center py-4'>
+        <li className='hover:bg-forest-600 flex w-full justify-center py-4 duration-200'>
           Account
         </li>
       </ul>

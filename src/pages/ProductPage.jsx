@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import plants from '../data/plantData';
 import Quantity from '../components/Quantity';
+import { ArrowLeftCircle } from 'lucide-react';
 
 export default function ProductPage({ addToCart }) {
   const { productName } = useParams();
@@ -14,16 +15,16 @@ export default function ProductPage({ addToCart }) {
 
   return (
     <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-80px)] w-full justify-center'>
-      <div className='flex items-start justify-center gap-6'>
+      <div className='bg-white-100 flex flex-col items-center justify-start gap-6 pt-6 md:flex-row md:items-start md:justify-center md:bg-opacity-0 md:pt-12'>
         <div
-          className='relative flex w-[50%] max-w-2xl overflow-hidden rounded-lg group-hover:opacity-75'
+          className='relative flex h-auto w-[60%] max-w-2xl rounded-lg md:w-[40%]'
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
         >
           <img
             src={img1}
             alt={`${productName} plant`}
-            className='h-[50%] w-full rounded-lg object-cover object-center'
+            className='h-full w-full rounded-lg object-cover object-center'
           />
           <img
             src={img2}
@@ -33,25 +34,29 @@ export default function ProductPage({ addToCart }) {
             }`}
           />
         </div>
-        <div className='flex max-w-[30%] flex-col gap-4'>
-          <h2 className='text-forest-900 text-3xl font-bold'>{productName}</h2>
-          <h3 className='text-sage-500 text-2xl font-bold'>{`$${price}`}</h3>
+        <div className='flex max-w-[60%] flex-col gap-4 md:max-w-[40%]'>
+          <h2 className='text-forest-900 text-2xl font-bold md:text-3xl'>
+            {productName}
+          </h2>
+          <h3 className='text-sage-500 text-xl font-bold md:text-2xl'>{`$${price}`}</h3>
           <p className='text-forest-900 text-sm lg:text-base'>{info}</p>
-          <Quantity quantity={quantity} setQuantity={setQuantity} />
-          <button
-            onClick={() => {
-              addToCart(productName, price, quantity, img1);
-              setQuantity(1);
-            }}
-            className='bg-forest-900 text-white-100 hover:bg-sage-500 w-32 rounded-lg p-2'
-          >
-            Add to Cart
-          </button>
+          <div className='flex items-center justify-start gap-6'>
+            <Quantity quantity={quantity} setQuantity={setQuantity} />
+            <button
+              onClick={() => {
+                addToCart(productName, price, quantity, img1);
+                setQuantity(1);
+              }}
+              className='bg-forest-900 text-white-100 hover:bg-sage-500 w-24 rounded-lg p-2 text-sm md:text-base'
+            >
+              Add to Cart
+            </button>
+          </div>
           <button
             onClick={() => nav(-1)}
-            className='bg-forest-900 text-white-100 hover:bg-sage-500 w-32 rounded-lg p-2'
+            className='bg-forest-900 text-white-100 hover:bg-sage-500 mt-4 flex w-32 items-center justify-center gap-2 rounded-lg p-2 text-sm md:w-36 md:text-base'
           >
-            Back to Shop
+            <ArrowLeftCircle /> Back to Shop
           </button>
         </div>
       </div>

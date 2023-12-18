@@ -19,7 +19,7 @@ export default function Cart({ status, toggleCart, cart }) {
         }`}
       ></div>
       <div
-        className={`bg-white-100 absolute right-0 top-[84px] z-10 h-auto w-[420px] overflow-y-scroll rounded-l-xl p-4 ${
+        className={`bg-white-100 absolute right-0 top-[72px] z-10 h-auto w-[420px] overflow-y-scroll rounded-l-xl p-4 md:top-[84px] ${
           status
             ? 'translate-x-0 transform transition-transform duration-700'
             : 'translate-x-full transform transition-transform duration-700'
@@ -48,7 +48,12 @@ export default function Cart({ status, toggleCart, cart }) {
               );
             })}
             <p>Total: ${calculateSubtotal()}</p>
-            <button>Checkout</button>
+            <Link to='/' className=''>
+              Checkout
+            </Link>
+            <Link to='/shop' className=''>
+              Continue Shopping
+            </Link>
           </div>
         )}
       </div>

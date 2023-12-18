@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default function App() {
   const [cart, setCart] = useState([]);
-  const [cartActive, setCartActive] = useState(true);
+  const [cartActive, setCartActive] = useState(false);
 
   function toggleCart() {
     if (!cartActive) {

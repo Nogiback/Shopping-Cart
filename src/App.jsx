@@ -51,7 +51,7 @@ export default function App() {
 
   function decreaseCartItemQuantity(product) {
     if (product.quantity === 1) {
-      removeFromCart(product.name);
+      removeFromCart(product);
       return;
     } else {
       const newQuantity = product.quantity - 1;

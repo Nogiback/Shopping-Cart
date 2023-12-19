@@ -4,7 +4,7 @@ import plants from '../data/plantData';
 import Quantity from '../components/Quantity';
 import { ArrowLeftCircle } from 'lucide-react';
 
-export default function ProductPage({ addToCart }) {
+export default function ProductPage({ addToCart, toggleCart }) {
   const { productName } = useParams();
   const nav = useNavigate();
   const [quantity, setQuantity] = useState(1);
@@ -46,6 +46,7 @@ export default function ProductPage({ addToCart }) {
               onClick={() => {
                 addToCart(productName, price, quantity, img1);
                 setQuantity(1);
+                toggleCart();
               }}
               className='bg-forest-900 text-white-100 hover:bg-sage-500 w-24 rounded-lg p-2 text-sm md:text-base'
             >

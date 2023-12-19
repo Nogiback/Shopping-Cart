@@ -53,11 +53,13 @@ export default function App() {
           <Route path='/shop' element={<Shop />} />
           <Route
             path='/shop/:productName'
-            element={<ProductPage addToCart={addToCart} />}
+            element={
+              <ProductPage addToCart={addToCart} toggleCart={toggleCart} />
+            }
           />
           <Route path='*' element={<NotFound />} />
         </Routes>
-        <Cart status={cartActive} toggleCart={toggleCart} cart={cart} />
+        <Cart cartStatus={cartActive} toggleCart={toggleCart} cart={cart} />
         <Footer />
       </Router>
     </>

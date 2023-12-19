@@ -29,7 +29,7 @@ export default function Footer() {
                   <li key={link} className='py-1'>
                     <a
                       href='#'
-                      className='hover:text-sage-600 font-normal transition-colors'
+                      className='hover:text-sage-500 font-normal transition-colors'
                     >
                       {link}
                     </a>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import plants from '../data/plantData';
 import Quantity from '../components/Quantity';
@@ -9,12 +9,17 @@ export default function ProductPage({ addToCart, toggleCart }) {
   const nav = useNavigate();
   const [quantity, setQuantity] = useState(1);
   const [isHover, setIsHover] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { price, img1, img2, info } = plants.find(
     (plant) => plant.name === productName,
   );
 
   return (
-    <section className='text-forest-900 dark:bg-forest-900 dark:text-white-200 relative flex h-[calc(100%-84px)] w-full justify-center'>
+    <section className='text-forest-900 relative flex h-[calc(100%-84px)] w-full justify-center'>
       <div className='bg-white-100 flex flex-col items-center justify-start gap-6 pt-6 md:flex-row md:items-start md:justify-center md:bg-opacity-0 md:pt-12'>
         <div
           className='relative flex h-auto w-[60%] max-w-2xl rounded-lg md:w-[40%]'

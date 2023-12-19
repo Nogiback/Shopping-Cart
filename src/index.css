@@ -15,6 +15,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-forest-900 overflow-x-hidden
+}
+
 #root {
   height: 100dvh;
   background-repeat: no-repeat;
@@ -23,6 +27,6 @@
   background-image: url('./assets/layered-waves-haikei-light.svg');
 }
 
-.active {
+.active { 
   @apply text-sage-600 underline;
 }

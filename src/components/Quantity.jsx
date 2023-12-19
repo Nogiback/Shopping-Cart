@@ -17,18 +17,16 @@ export default function Quantity({ quantity, setQuantity }) {
         <MinusCircle
           type='button'
           className='h-9 w-9'
-          aria-label='decrease-quantity'
           onClick={decreaseQuantity}
         />
       </button>
-      <div className='text-forest-900 w-10 appearance-none text-center text-2xl font-bold'>
+      <div className='text-forest-900 w-10 text-center text-2xl font-bold'>
         {quantity}
       </div>
       <button>
         <PlusCircle
           type='button'
           className='h-9 w-9'
-          aria-label='increase-quantity'
           onClick={increaseQuantity}
         />
       </button>

@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ShoppingCart, Search, CircleUserRound, Store } from 'lucide-react';
+import {
+  ShoppingCart,
+  Search,
+  CircleUserRound,
+  Store,
+  Moon,
+} from 'lucide-react';
 
 export default function NavBar({ toggleCart, cart }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +16,7 @@ export default function NavBar({ toggleCart, cart }) {
   }
 
   return (
-    <div className='bg-white-100 text-forest-900 dark:bg-forest-900 dark:text-white-200 sticky left-0 right-0 top-0 z-20 flex items-center justify-between px-8 py-5'>
+    <div className='bg-white-100 text-forest-900 sticky left-0 right-0 top-0 z-20 flex items-center justify-between px-8 py-5'>
       <Link className='flex text-2xl font-bold sm:text-4xl' to='/'>
         <Store className='mr-2 h-8 w-8 sm:h-11 sm:w-11' /> The Nogi Shop
       </Link>
@@ -30,7 +36,7 @@ export default function NavBar({ toggleCart, cart }) {
         <button
           onClick={toggleCart}
           type='button'
-          className='relative mr-5 flex bg-transparent'
+          className='relative flex bg-transparent'
         >
           <ShoppingCart size={26} className='hover:text-sage-600' />
           <div className='bg-sage-600 text-white-100 absolute -top-3 left-6 rounded-full px-2 py-0.5 text-sm'>
@@ -66,7 +72,7 @@ export default function NavBar({ toggleCart, cart }) {
         </button>
         <button
           type='button'
-          className='relative mr-5 flex bg-transparent'
+          className='relative flex bg-transparent'
           onClick={toggleCart}
         >
           <ShoppingCart size={26} className='hover:text-sage-600' />

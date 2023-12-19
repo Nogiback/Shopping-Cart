@@ -6,19 +6,17 @@ This is the capstone React project under the Fullstack Javascript Development cu
 
 ## Demo
 
-Coming soon!
+[Check it out on Vercel!](https://the-nogi-shop.vercel.app/)
 
 ## Screenshots
 
-Coming soon!
-
 ## Built With
 
-React, TailwindCSS, React Router, Vite, Vercel, ESLint, Prettier
+React, TailwindCSS, React Router, React Testing Library, Jest, Vite, Vercel, ESLint, Prettier
 
 ## Lessons Learned
 
-Coming Soon!
+I learned the importance of planning before you start building! Throughout the duration of the project, I would often make design changes prior to getting the site's functionality done. While this was not the most efficient method, I had a lot of fun going back and forth. I also decided to learn Tailwind for this project and highly enjoyed it! It allowed me to style components quickly, however it does bloat my JSX files!
 
 ## Feedback
 

@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import {
-  ShoppingCart,
-  Search,
-  CircleUserRound,
-  Store,
-  Moon,
-} from 'lucide-react';
+import { ShoppingCart, Search, CircleUserRound, Store } from 'lucide-react';
 
 export default function NavBar({ toggleCart, cart }) {
   const [isOpen, setIsOpen] = useState(false);

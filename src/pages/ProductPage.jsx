@@ -11,7 +11,7 @@ export default function ProductPage({ addToCart, toggleCart }) {
   const [isHover, setIsHover] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(window.scrollTo(0, 0), 100);
   }, []);
 
   const { price, img1, img2, info } = plants.find(

@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 export default function Shop() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(window.scrollTo(0, 0), 100);
   }, []);
 
   return (

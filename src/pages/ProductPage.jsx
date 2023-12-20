@@ -22,7 +22,7 @@ export default function ProductPage({ addToCart, toggleCart }) {
     <section className='text-forest-900 relative flex h-[calc(100%-84px)] w-full justify-center'>
       <div className='bg-white-100 flex flex-col items-center justify-start gap-6 pt-6 md:flex-row md:items-start md:justify-center md:bg-opacity-0 md:pt-12'>
         <div
-          className='relative flex h-auto w-[60%] max-w-2xl rounded-lg md:w-[40%]'
+          className='relative flex h-auto w-[70%] max-w-2xl rounded-lg md:w-[40%]'
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
         >
@@ -39,13 +39,13 @@ export default function ProductPage({ addToCart, toggleCart }) {
             }`}
           />
         </div>
-        <div className='flex max-w-[60%] flex-col gap-4 md:max-w-[40%]'>
-          <h2 className='text-forest-900 text-2xl font-bold md:text-3xl'>
+        <div className='flex max-w-[70%] flex-col gap-2 md:max-w-[40%]'>
+          <h2 className='text-forest-900 text-xl font-bold md:text-3xl'>
             {productName}
           </h2>
           <h3 className='text-sage-500 text-xl font-bold md:text-2xl'>{`$${price}`}</h3>
           <p className='text-forest-900 text-sm lg:text-base'>{info}</p>
-          <div className='flex items-center justify-start gap-6'>
+          <div className='mt-2 flex items-center justify-start gap-6'>
             <Quantity quantity={quantity} setQuantity={setQuantity} />
             <button
               onClick={() => {

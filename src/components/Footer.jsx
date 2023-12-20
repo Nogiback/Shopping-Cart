@@ -41,9 +41,8 @@ export default function Footer() {
         </div>
         <div className='border-white-100 mt-12 flex w-full flex-col items-center justify-center border-t py-4 md:flex-row md:justify-between'>
           <p className='text-white-100 mb-4 text-center text-sm md:mb-0'>
-            &copy; {currentYear}{' '}
-            <a href='https://material-tailwind.com/'>The Nogi Shop</a>. All
-            Rights Reserved.
+            &copy; {currentYear} <a href='/'>The Nogi Shop</a>. All Rights
+            Reserved.
           </p>
           <div className='text-white-100 flex gap-4 sm:justify-center'>
             <a

@@ -79,7 +79,7 @@ const plants = [
     price: 50,
     img1: calamondin1,
     img2: calamondin2,
-    info: `Calamondin, aka Citrus mitis or Calamansi, is a sour citrus fruit originating in China and is a cross between a mandarin orange and a kumquat. Its glossy leaves also give off a delightful citrus aroma. Being one of the best indoor fruiting trees, it produces small, sour oranges, about 1 inch in diameter, which resemble tangerines. It can also withstand temperatures down to -6°C! But if you want an abundance of fruit, keep it in a very bright and warm location.`,
+    info: `Calamondin, aka Citrus mitis or Calamansi, is a sour citrus fruit originating in China and is a cross between a mandarin orange and a kumquat. Its glossy leaves also give off a delightful citrus aroma. It produces small, sour oranges, about 1 inch in diameter, which resemble tangerines. It can also withstand temperatures down to -6°C! But if you want an abundance of fruit, keep it in a very bright and warm location.`,
   },
 ];
 

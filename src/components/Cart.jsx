@@ -27,7 +27,7 @@ export default function Cart({
         }`}
       ></div>
       <div
-        className={`bg-white-100 absolute right-0 top-[72px] z-10 flex h-[calc(100%-117px)] w-[95%] flex-col gap-4 p-4 sm:top-[84px] sm:w-[420px] sm:rounded-l-xl ${
+        className={`bg-white-100 absolute right-0 top-[72px] z-10 flex h-[calc(100%-117px)] w-[93%] flex-col gap-4 p-4 sm:top-[84px] sm:w-[420px] sm:rounded-l-xl ${
           cartStatus
             ? 'translate-x-0 transform transition-transform duration-700'
             : 'translate-x-full transform transition-transform duration-700'

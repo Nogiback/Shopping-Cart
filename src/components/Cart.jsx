@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import CartItem from './CartItem';
@@ -10,12 +11,12 @@ export default function Cart({
   onIncrease,
   deleteItem,
 }) {
-  function calculateSubtotal() {
+  const subtotal = useMemo(() => {
     return cart.reduce(
       (currentTotal, item) => currentTotal + item.price * item.quantity,
       0,
     );
-  }
+  }, [cart]);
 
   return (
     <>
@@ -71,7 +72,7 @@ export default function Cart({
             <div className='bg-white-100 text-forest-900 border-forest-900 flex w-full flex-col justify-center gap-4 border-t-2 border-solid pt-4 text-xl font-bold'>
               <div className='flex justify-between'>
                 <span>Total:</span>
-                <span>${calculateSubtotal()}</span>
+                <span>${subtotal}</span>
               </div>
               <div className='flex flex-col items-center justify-center gap-4 text-lg'>
                 <Link
